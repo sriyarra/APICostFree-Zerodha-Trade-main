@@ -36,3 +36,7 @@ def kitelogin():
     with open('config.ini', 'w') as conf:
         config_object.write(conf)
     return tokeninfo["enctoken"]
+
+
+if __name__ == '__main__':
+     app.run()
