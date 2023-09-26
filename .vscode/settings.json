@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ca974cdd-d6d0-4381-a536-61b2ae8db257/resourceGroups/sritrade-rg-ci/providers/Microsoft.Web/sites/sritrade-webapi-admin",
+    "appService.deploySubpath": "."
+}
