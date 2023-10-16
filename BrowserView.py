@@ -29,14 +29,7 @@ def kitelogin():
     sleep(1)
     driver.find_element(By.XPATH, "//button[@class='button button-blue']").click()
     enctoken = driver.get_cookie("enctoken")['value']
-    tokeninfo = config_object["ENCTOKEN"]
-    tokeninfo["enctoken"] = enctoken
-    sleep(5)
-    #Write changes back to file
-    with open('config.ini', 'w') as conf:
-        config_object.write(conf)
-    return tokeninfo["enctoken"]
-
+    return enctoken
 
 if __name__ == '__main__':
      app.run()
